@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LogMemo</string>
+
+    <string-array name="Urgency">
+
+        <item>General</item>
+        <item> Urgent </item>
+        <item>Very Urgent</item>
+
+    </string-array>
+
+
+
+
+</resources>
