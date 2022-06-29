@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static Connection connection;
 
-    public static int inputParameter;
+    public static int UserId;
 
 
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv = findViewById(R.id.condition);
 
-        inputParameter = 0;
+        UserId = 0;
         String temp = null;
 
         try {
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (temp != null) {
                     tv.setText("Login Successful");
-                    inputParameter = Integer.parseInt(temp);
+                    UserId = Integer.parseInt(temp);
                     Intent intent = new Intent(MainActivity.this, ScannerPage.class);
                     startActivity(intent);
                 } else {
