@@ -1,4 +1,4 @@
-package com.example.spfapp;
+package com.example.codetantrahackathon;
 
 import android.os.StrictMode;
 
@@ -13,7 +13,7 @@ public class ConnectionHelper {
     private static String ip = "103.197.221.123";
     private static String port = "1433";
     private static String Classes = "net.sourceforge.jtds.jdbc.Driver";
-    private static String database = "SIAMMSData";
+    private static String database = "Team54";
     private static String username = "sa";
     private static String password = "Mh03@123";
     private static String url = "jdbc:jtds:sqlserver://" + ip + ":" + port + "/" + database;
@@ -37,3 +37,5 @@ public class ConnectionHelper {
         return connection;
     }
 }
+
+

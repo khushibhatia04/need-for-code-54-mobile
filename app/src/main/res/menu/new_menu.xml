@@ -4,12 +4,19 @@
 
 
 
+        <!--        <item-->
+        <!--            android:id="@+id/addnew"-->
+        <!--            android:icon="@drawable/ic_baseline_add_24"-->
+        <!--            android:title="add new"-->
+        <!--            android:iconTint="@color/white"-->
+        <!--            app:showAsAction="always"/>-->
+
         <item
-            android:id="@+id/addnew"
-            android:icon="@drawable/ic_baseline_add_24"
-            android:title="add new"
-            android:iconTint="@color/white"
-            app:showAsAction="always"/>
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:iconTint="@color/black"
+            android:title="logout"
+            app:showAsAction="always" />
 
 
 </menu>

@@ -1,4 +1,4 @@
-package com.example.spfapp;
+package com.example.codetantrahackathon;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
@@ -15,9 +15,11 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
-import com.example.spfapp.R;
+import com.example.codetantrahackathon.R;
+
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             if (connection != null) {
 //                String query = "Select * from SysUser where UsrLogin = '" + username + "' and UsrPswd = '" + password + "'";
-                String query = "Select * from SysUser where UsrLoginName = '" + username + "' and UsrLoginPassword = '" + password + "'";
+                String query = "Select * from Users where LoginName = '" + username + "' and Password = '" + password + "'";
 
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(query);
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 if (temp != null) {
                     tv.setText("Login Successful");
                     UserId = Integer.parseInt(temp);
-                    Intent intent = new Intent(MainActivity.this, ScannerPage.class);
+                    Intent intent = new Intent(MainActivity.this, DashBoard.class);
                     startActivity(intent);
                 } else {
                     tv.setText("Login Failed");

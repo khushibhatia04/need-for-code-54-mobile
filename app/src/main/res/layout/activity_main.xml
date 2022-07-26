@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="#80b1f9">
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,10 +36,12 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
-                android:layout_width="match_parent"
+                android:layout_width="371dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#DCE4E8"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"/>
+                android:textColorHint="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,11 +57,14 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
-                android:layout_width="match_parent"
+                android:layout_width="371dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#DCE4E8"
+                android:gravity="center|start"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"/>
+                android:textColorHint="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,10 +75,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
-        android:backgroundTint="#FF5722"
+        android:backgroundTint="#305997"
         android:onClick="onClick"
         android:text="LOGIN"
         android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="QuitApp"
+        android:text="Cancel"
+        android:layout_margin="10dp"
+        android:backgroundTint="#305997"
+        android:textColor="@color/white" />
+
 
     <TextView
         android:layout_width="wrap_content"
