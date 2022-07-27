@@ -62,12 +62,14 @@ public class ScorePage extends AppCompatActivity implements  NavigationView.OnNa
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId() ;
         if (id == R.id.nav_Dash ) {
+            finish();
             Intent intent = new Intent(ScorePage.this, DashBoard.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout ) {
             finish();
         } else if (id == R.id. nav_reportCard ) {
+            finish();
             Intent intent = new Intent(ScorePage.this, ReportCard.class);
             startActivity(intent);
         }

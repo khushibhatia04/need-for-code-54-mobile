@@ -61,12 +61,14 @@ public class DashBoard extends AppCompatActivity implements NavigationView.OnNav
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId() ;
         if (id == R.id.nav_score ) {
+            finish();
             Intent intent = new Intent(DashBoard.this, ScorePage.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_logout ) {
             finish();
         } else if (id == R.id. nav_reportCard ) {
+            finish();
             Intent intent = new Intent(DashBoard.this, ReportCard.class);
             startActivity(intent);
         }
